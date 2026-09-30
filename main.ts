@@ -11,7 +11,6 @@ import { MyContext } from "./src/core/types.ts";
 import { sessionsCollection } from "./src/database/sessionsDb.ts";
 import i18n from "./src/core/i18n.ts";
 
-import { serve } from "server";
 import {
   Bot,
   GrammyError,
@@ -78,7 +77,7 @@ if (Deno.args[0] == "--polling") {
   console.info(`Started as @${bot.botInfo.username} on webhooks.`);
 
   const handleUpdate = webhookCallback(bot, "std/http");
-  serve(async (req) => {
+  Deno.serve(async (req) => {
     if (req.method === "POST") {
       const url = new URL(req.url);
       if (url.pathname.slice(1) === bot.token) {
