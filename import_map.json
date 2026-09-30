@@ -5,6 +5,7 @@
     "server": "https://deno.land/std@0.154.0/http/server.ts",
     "grammy/": "https://deno.land/x/grammy@v1.14.1/",
     "https://lib.deno.dev/x/grammy@1/mod.ts": "https://deno.land/x/grammy@v1.14.1/mod.ts",
+    "https://lib.deno.dev/x/grammy@1.x/mod.ts": "https://deno.land/x/grammy@v1.14.1/mod.ts",
     "mongo": "https://deno.land/x/mongo@v0.31.1/mod.ts",
     "autoQuote": "https://deno.land/x/grammy_autoquote@v1.1.2/mod.ts",
     "hydrate": "https://deno.land/x/grammy_hydrate@v1.3.1/mod.ts",
